@@ -1,0 +1,96 @@
+:root {
+  /* ── Dark theme color tokens ────────────────────────────── */
+  --color-bg:            #0d0d0f;
+  --color-surface-1:     #16161a;
+  --color-surface-2:     #1e1e24;
+  --color-surface-3:     #28282f;
+  --color-border:        #333340;
+  --color-accent:        #5b6cf9;
+  --color-accent-hover:  #7080ff;
+  --color-accent-muted:  #3a4499;
+  --color-text-primary:  #e8e8ef;
+  --color-text-secondary:#9898aa;
+  --color-text-muted:    #5c5c70;
+  --color-error:         #e05260;
+  --color-warning:       #e09a30;
+  --color-success:       #3ec97a;
+  --color-info:          #3ab5e8;
+
+  /* ── Typography scale (10 steps, fluid clamp) ──────────── */
+  --text-2xs: clamp(0.625rem, 0.5vw + 0.5rem, 0.6875rem);
+  --text-xs:  clamp(0.6875rem, 0.6vw + 0.5625rem, 0.75rem);
+  --text-sm:  clamp(0.75rem,   0.7vw + 0.625rem,  0.875rem);
+  --text-md:  clamp(0.875rem,  0.8vw + 0.75rem,   1rem);
+  --text-base:clamp(1rem,      1vw  + 0.875rem,   1.125rem);
+  --text-lg:  clamp(1.125rem,  1.2vw + 0.9375rem, 1.25rem);
+  --text-xl:  clamp(1.25rem,   1.5vw + 1rem,      1.5rem);
+  --text-2xl: clamp(1.5rem,    2vw  + 1.125rem,   2rem);
+  --text-3xl: clamp(2rem,      3vw  + 1.5rem,     2.5rem);
+  --text-4xl: clamp(2.5rem,    4vw  + 1.75rem,    3.5rem);
+
+  --font-family-ui:   system-ui, -apple-system, sans-serif;
+  --font-family-mono: 'Cascadia Code', 'Fira Mono', monospace;
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold:   700;
+  --line-height-tight:  1.25;
+  --line-height-normal: 1.5;
+  --line-height-loose:  1.75;
+
+  /* ── Spacing scale (base 4px, 16 steps) ────────────────── */
+  --space-1:  0.25rem;   /* 4px  */
+  --space-2:  0.5rem;    /* 8px  */
+  --space-3:  0.75rem;   /* 12px */
+  --space-4:  1rem;      /* 16px */
+  --space-5:  1.25rem;   /* 20px */
+  --space-6:  1.5rem;    /* 24px */
+  --space-7:  1.75rem;   /* 28px */
+  --space-8:  2rem;      /* 32px */
+  --space-9:  2.25rem;   /* 36px */
+  --space-10: 2.5rem;    /* 40px */
+  --space-11: 2.75rem;   /* 44px */
+  --space-12: 3rem;      /* 48px */
+  --space-14: 3.5rem;    /* 56px */
+  --space-16: 4rem;      /* 64px */
+  --space-20: 5rem;      /* 80px */
+  --space-24: 6rem;      /* 96px */
+
+  /* ── Shadow tokens ──────────────────────────────────────── */
+  --shadow-sm:  0 1px 2px rgba(0,0,0,0.4);
+  --shadow-md:  0 4px 8px rgba(0,0,0,0.5);
+  --shadow-lg:  0 8px 24px rgba(0,0,0,0.6);
+  --shadow-xl:  0 16px 48px rgba(0,0,0,0.7);
+  --shadow-inset: inset 0 1px 3px rgba(0,0,0,0.5);
+
+  /* ── Radius tokens ──────────────────────────────────────── */
+  --radius-sm:   2px;
+  --radius-md:   4px;
+  --radius-lg:   8px;
+  --radius-xl:   12px;
+  --radius-2xl:  16px;
+  --radius-full: 9999px;
+
+  /* ── Z-index tokens ─────────────────────────────────────── */
+  --z-below:    -1;
+  --z-base:      0;
+  --z-raised:   10;
+  --z-dropdown: 100;
+  --z-sticky:   200;
+  --z-overlay:  300;
+  --z-modal:    400;
+  --z-toast:    500;
+  --z-tooltip:  600;
+
+  /* ── Transition / animation timing tokens ───────────────── */
+  --duration-fast:   80ms;
+  --duration-normal: 160ms;
+  --duration-slow:   320ms;
+  --duration-slower: 500ms;
+  --ease-default:    cubic-bezier(0.4, 0, 0.2, 1);
+  --ease-in:         cubic-bezier(0.4, 0, 1, 1);
+  --ease-out:        cubic-bezier(0, 0, 0.2, 1);
+  --ease-spring:     cubic-bezier(0.34, 1.56, 0.64, 1);
+  --transition-fast:   var(--duration-fast)   var(--ease-default);
+  --transition-normal: var(--duration-normal) var(--ease-default);
+  --transition-slow:   var(--duration-slow)   var(--ease-default);
+}

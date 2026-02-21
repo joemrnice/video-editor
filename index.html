@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; worker-src blob:;" />
+  <title>Video Editor</title>
+  <link rel="stylesheet" href="assets/css/reset.css" />
+  <link rel="stylesheet" href="assets/css/variables.css" />
+  <link rel="stylesheet" href="assets/css/layout.css" />
+  <link rel="stylesheet" href="assets/css/toolbar.css" />
+  <link rel="stylesheet" href="assets/css/panels.css" />
+  <link rel="stylesheet" href="assets/css/timeline.css" />
+  <link rel="stylesheet" href="assets/css/modals.css" />
+  <link rel="stylesheet" href="assets/css/theme-dark.css" />
+</head>
+<body class="theme-dark">
+  <div id="app" role="application" aria-label="Video Editor">
+    <header id="toolbar" role="banner">
+      <nav class="toolbar-nav" aria-label="Main toolbar"></nav>
+    </header>
+    <main id="workspace">
+      <aside id="panel-media" class="panel" aria-label="Media panel"></aside>
+      <section id="preview" aria-label="Preview"></section>
+      <aside id="panel-effects" class="panel" aria-label="Effects panel"></aside>
+    </main>
+    <section id="timeline" aria-label="Timeline"></section>
+    <div id="modal-overlay" class="modal-overlay" role="dialog" aria-hidden="true"></div>
+  </div>
+  <script type="module" src="assets/js/core/App.js"></script>
+</body>
+</html>
