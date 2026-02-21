@@ -27,7 +27,7 @@ final class ChunkedUpload
     public function tempPath(): string
     {
         $dir = BASE_PATH . '/storage/uploads/' . $this->uploadId;
-        if (!is_dir($dir) && !mkdir($dir, 0750, true)) {
+        if (!is_dir($dir) && !mkdir($dir, 0700, true)) {
             throw new \RuntimeException("Cannot create upload directory: {$dir}");
         }
         return $dir . '/chunk_' . $this->chunkIndex;

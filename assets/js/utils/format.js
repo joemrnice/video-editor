@@ -6,7 +6,8 @@ export function formatTimecode(ms, fps = 30) {
   const hh = String(Math.floor(totalSeconds / 3600)).padStart(2, '0');
   const mm = String(Math.floor((totalSeconds % 3600) / 60)).padStart(2, '0');
   const ss = String(totalSeconds % 60).padStart(2, '0');
-  const ff = String(frames).padStart(2, '0');
+  const ffWidth = fps > 99 ? 3 : 2;
+  const ff = String(frames).padStart(ffWidth, '0');
   return `${hh}:${mm}:${ss}:${ff}`;
 }
 
