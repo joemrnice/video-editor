@@ -1,0 +1,32 @@
+# Storage artifacts
+/storage/uploads/*
+/storage/projects/*
+/storage/exports/*
+/storage/thumbnails/*
+!storage/uploads/.gitkeep
+!storage/exports/.gitkeep
+!storage/projects/.gitkeep
+!storage/thumbnails/.gitkeep
+
+# Environment
+.env
+.env.*
+!.env.example
+
+# PHP
+vendor/
+composer.lock
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Node (if ever added)
+node_modules/
+dist/
